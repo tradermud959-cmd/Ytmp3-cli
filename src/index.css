@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+@theme {
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-neon-cyan: #00f3ff;
+  --color-neon-magenta: #ff00ff;
+  --color-neon-green: #39ff14;
+  --color-bg-dark: #050505;
+  --color-glass: rgba(15,15,20,0.85);
+  --color-glass-border: rgba(255,255,255,0.15);
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  background-image: radial-gradient(circle at 20% 20%, rgba(0,243,255,0.15) 0%, transparent 45%),
+                    radial-gradient(circle at 80% 80%, rgba(255,0,255,0.15) 0%, transparent 45%);
+  color: white;
+  font-family: var(--font-mono);
+}
